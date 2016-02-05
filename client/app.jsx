@@ -1,4 +1,5 @@
 import React from 'react';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 // define and export our Layout component
 export const Layout = ({content}) => (
@@ -9,9 +10,14 @@ export const Layout = ({content}) => (
     </div>
 );
 
+export const MyAwesomeReactComponent = () => (
+  <RaisedButton label="Default" />
+);
+
 // define and export our Welcome component
 export const Welcome = ({name}) => (
     <div>
         Hello, {name}.
+        <MyAwesomeReactComponent/>
     </div>
 );
